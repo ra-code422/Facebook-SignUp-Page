@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    background-color:  #e9ebee;
+    color: #868687;
+}
+.conteneur{
+    width: auto;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 30%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.08);
+
+}
+.section1{
+    text-align: center;
+    padding-top: 50px;
+    line-height: 40px;
+}
+.section1 h1{
+    color: #1c1e21;
+
+}
+.section2{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 25px;
+}
+input, .date select .choix{
+    border: solid #868687;
+}
+input:focus, .date select:focus {
+    border: 2px solid black;
+    outline: none;
+}
+.section2 input{
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+}
+.section3{
+    padding-top: 20px;
+}
+.section3 input{
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.section4{
+    padding-top: 25px;
+}
+.date, .box{
+    display: flex;
+    gap: 10px;
+    padding-top: 6px;
+
+}
+.date select{
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #e9ebee;
+}
+.section5{
+    padding-top: 20px;
+}
+::placeholder{
+font-size: 16px;
+}
+.choix{
+padding: 10px;
+    width: 50%;
+    border: solid #868687 ;
+border-radius: 5px;
+    color: #1c1e21;
+    font-size: 13px;
+
+}
+a{
+    color: #1877f2;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration:underline;
+}
+.section6 p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+button{
+    padding: 15px;
+    width: 100%;
+    background-color:#42b72a;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+}
+@media screen and (max-width:1024px) {
+    .card{
+    width: 50%;
+}
+}
+@media screen and (max-width:768px) {
+    .card{
+    width: 60%;
+    font-size: 14px;
+}
+    .date, .box{
+    flex-direction: column;
+}
+.date select{
+    width: 100%;
+}
+}
+@media screen and (max-width:425px) {
+    .conteneur{
+        width: 100%;
+    }
+    .card{
+    width: 100%;
+}
+    .date{
+    flex-direction: column;
+}
+.date select{
+    width: 100%;
+}
+}
