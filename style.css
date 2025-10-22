@@ -93,7 +93,10 @@ font-size: 17px;
     border-radius: 5px;
     color: #1c1e21;
     font-size: 13px;
+}
+.choix label{
     cursor: pointer;
+
 }
 a{
     color: #1877f2;
