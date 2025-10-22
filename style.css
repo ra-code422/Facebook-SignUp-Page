@@ -4,10 +4,11 @@
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
+     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding: 250px 10px; 
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     background-color:  #e9ebee;
     color: #868687;
@@ -17,7 +18,7 @@ body{
     height:auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 .card{
     width: 30%;
@@ -26,7 +27,6 @@ body{
     border-radius: 10px;
     padding: 30px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.08);
-
 }
 .section1{
     text-align: center;
@@ -45,6 +45,7 @@ body{
 }
 input, .date select .choix{
     border: solid #868687;
+    font-size: 20px;
 }
 input:focus, .date select:focus {
     border: 2px solid black;
@@ -52,14 +53,14 @@ input:focus, .date select:focus {
 }
 .section2 input{
     width: 50%;
-    padding: 20px;
+    padding: 12px;
     border-radius: 5px;
 }
 .section3{
     padding-top: 20px;
 }
 .section3 input{
-    padding: 20px;
+    padding: 12px;
     width: 100%;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -74,7 +75,7 @@ input:focus, .date select:focus {
 
 }
 .date select{
-    padding: 10px;
+    padding: 12px;
     width: 50%;
     border-radius: 5px;
     background-color: #e9ebee;
@@ -83,16 +84,16 @@ input:focus, .date select:focus {
     padding-top: 20px;
 }
 ::placeholder{
-font-size: 16px;
+font-size: 17px;
 }
 .choix{
-padding: 10px;
+    padding: 12px;
     width: 50%;
     border: solid #868687 ;
-border-radius: 5px;
+    border-radius: 5px;
     color: #1c1e21;
     font-size: 13px;
-
+    cursor: pointer;
 }
 a{
     color: #1877f2;
@@ -124,6 +125,12 @@ button{
     width: 60%;
     font-size: 14px;
 }
+.section2{
+    flex-direction: column;
+}
+.section2 input{
+    width: 100%;
+}
     .date, .box{
     flex-direction: column;
 }
@@ -137,6 +144,7 @@ button{
     }
     .card{
     width: 100%;
+    height: auto;
 }
     .date{
     flex-direction: column;
